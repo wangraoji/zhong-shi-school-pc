@@ -1,0 +1,19 @@
+// 重写 element-ui
+.el-menu-demo {
+    .el-menu-item {
+        &.is-active {
+            background: #409eff!important;
+            color:#fff;
+        }
+    }
+}
+
+.courseActive {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    .el-input-group__append {
+        background: #fff!important;
+    }
+}

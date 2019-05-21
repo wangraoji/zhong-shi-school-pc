@@ -1,0 +1,52 @@
+@import "./element-ui.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body,#app {
+    height: 100%;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    font-size: 14px;
+    color: #303133;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.yichu {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
