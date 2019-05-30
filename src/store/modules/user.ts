@@ -6,9 +6,9 @@ const state = {
 }
 
 const mutations = {
-    // SET_TOKEN: (state, token) => {
-    //     state.token = token
-    // },
+    SET_TOKEN: (state: any, token: any) => {
+        state.token = token
+    },
     // SET_NAME: (state, name) => {
     //     state.name = name
     // },
@@ -18,6 +18,11 @@ const mutations = {
 }
 
 const actions = {
+    login({ commit }: any, userInfo: any) {
+        const { username, password } = userInfo
+
+        commit('SET_TOKEN', 'ssss')
+    },
     // user login
     // login({ commit }, userInfo) {
     //     const { username, password } = userInfo

@@ -22,6 +22,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { setToken } from "@/util/auth";
 @Component
 export default class Login extends Vue {
   log: any;
@@ -40,7 +41,9 @@ export default class Login extends Vue {
     let ruleForm: any = this.$refs.ruleForm;
     ruleForm.validate(async (valid: any) => {
       if (valid) {
-        this.log(this.form);
+        setToken("sss");
+        this.$router.push({ path: "/" });
+        this.$store.commit("SET_TOKEN", "sss");
       } else {
         console.log("error submit!!");
         // alert(`还有必填项没录入`);
