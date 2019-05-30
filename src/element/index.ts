@@ -2,6 +2,8 @@ import {
     Row, Col,
     Dialog,
     Button,
+    Loading,
+    Pagination,
     Tabs,TabPane,
     Select,Option,
     Form,FormItem,
@@ -22,6 +24,8 @@ const element = {
         Vue.use(Col)
         Vue.use(Dialog)
         Vue.use(Button)
+        Vue.use(Loading)
+        Vue.use(Pagination)
         Vue.use(Tabs)
         Vue.use(TabPane)
         Vue.use(Container)

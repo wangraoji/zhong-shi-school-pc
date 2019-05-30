@@ -1,4 +1,10 @@
 // 重写 element-ui
+
+.el-main{
+    padding-bottom: 0;
+}
+
+
 .el-menu-demo {
     .el-menu-item {
         &.is-active {

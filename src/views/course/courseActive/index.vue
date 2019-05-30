@@ -267,7 +267,6 @@ export default class CourseActive extends Vue {
     let res: any = await getSubjects(param);
     if (res.ok) {
       let data: any = res.data;
-      this.log(data);
       this.regtime = [data.rbegin || "", data.rend || ""];
       this.form = _.cloneDeep(data);
       this.bytype = _.cloneDeep(data.bytype);

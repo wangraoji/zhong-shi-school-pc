@@ -82,7 +82,7 @@
             </el-table>
           </el-col>
         </el-form-item>
-        <el-form-item label="简介"> 
+        <el-form-item label="简介">
           <quill-editor v-model="form.intro" :options="editorOption"></quill-editor>
         </el-form-item>
         <el-form-item>
@@ -118,6 +118,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { getBookClub } from "@/api/bookClubApi";
 import _ from "lodash";
 @Component
 export default class BookClubActive extends Vue {
@@ -138,11 +139,12 @@ export default class BookClubActive extends Vue {
     placeholder: "在这里插入文字......"
   };
   mounted() {
-    let data: any = this.$route.query.data;
-    if (data && data.title) {
+    let data: any = this.$route.query.id;
+    if (data) {
       this.title = "修改内容";
-      this.form = _.cloneDeep(data);
-      this.log(this.form);
+      // this.form = _.cloneDeep(data);
+      this.getBookClubFn({ id: data });
+      // this.log(this.form);
     } else {
       this.title = "新增内容";
       this.form = {
@@ -151,6 +153,16 @@ export default class BookClubActive extends Vue {
         helper: [],
         listener: []
       };
+    }
+  }
+  // 获取读书会详情
+  async getBookClubFn(id: any) {
+    let res: any = await getBookClub(id);
+    this.log(res);
+    if (res.ok) {
+      this.form = _.cloneDeep(res.data);
+    } else {
+      alert(res.msg);
     }
   }
   addClick(tag: string) {

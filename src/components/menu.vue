@@ -13,7 +13,7 @@
           <span>内容管理</span>
         </template>
         <el-menu-item index="contentList">内容列表</el-menu-item>
-        <el-menu-item index="contentActive">内容编辑</el-menu-item>
+        <!-- <el-menu-item index="contentActive">内容编辑</el-menu-item> -->
         <el-menu-item index="contentPush">内容推送</el-menu-item>
       </el-submenu>
       <el-submenu index="2">
@@ -22,7 +22,7 @@
           <span>课程管理</span>
         </template>
         <el-menu-item index="courseList">课程列表</el-menu-item>
-        <el-menu-item index="courseActive">课程编辑</el-menu-item>
+        <!-- <el-menu-item index="courseActive">课程编辑</el-menu-item> -->
       </el-submenu>
       <el-submenu index="3">
         <template slot="title">
@@ -37,7 +37,7 @@
           <span>读书会管理</span>
         </template>
         <el-menu-item index="bookClubList">读书会列表</el-menu-item>
-        <el-menu-item index="bookClubActive">读书会编辑</el-menu-item>
+        <!-- <el-menu-item index="bookClubActive">读书会编辑</el-menu-item> -->
       </el-submenu>
       <el-menu-item index="baseSetting">
         <i class="el-icon-setting"></i>
