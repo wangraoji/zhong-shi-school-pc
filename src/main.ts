@@ -21,6 +21,8 @@ import "@/styles/index.scss";
 // 引入 lodash
 import _ from "lodash";
 
+import '@/permission' // permission control
+
 Vue.config.productionTip = false
 Vue.prototype.log = (v1: any, v2?: any) => {
   if (v2) {
