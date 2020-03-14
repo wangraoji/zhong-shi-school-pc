@@ -1155,9 +1155,9 @@ acorn-walk@^6.1.1:
   integrity sha1-02O2b1+sXwGP+cOh57b44xDMORM=
 
 acorn@^5.0.0, acorn@^5.6.2:
-  version "5.7.3"
-  resolved "https://registry.npm.taobao.org/acorn/download/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha1-Z6ojG/iBKXS4UjWpZ3Hra9B+onk=
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.7, acorn@^6.1.1:
   version "6.1.1"
@@ -5277,7 +5277,7 @@ npm-run-path@^2.0.0:
 
 nprogress@^0.2.0:
   version "0.2.0"
-  resolved "http://r.cnpmjs.org/nprogress/download/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  resolved "https://r.cnpmjs.org/nprogress/download/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
   integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.2, nth-check@~1.0.1:
